@@ -80,7 +80,7 @@ public class TransBean implements Parcelable {
 		}
 	}
 	
-	public static Creator<TransBean> CREATOR = new Creator<TransBean>(){
+	public static Parcelable.Creator<TransBean> CREATOR = new Parcelable.Creator<TransBean>(){
 
 		@Override
 		public TransBean createFromParcel(Parcel source) {

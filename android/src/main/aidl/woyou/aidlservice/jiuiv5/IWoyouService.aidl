@@ -341,4 +341,22 @@ interface IWoyouService
     */
     void setPrinterStyle(int key, int value);
 
+    /**
+    * 获取当前打印机模式(目前仅台式机支持黑标模式，手持机支持标签模式)
+    * 返回：0 普通模式 1黑标模式 2 标签模式
+	* 支持版本:v4.10.0以上
+    */
+    int getPrinterMode();
+
+    /**
+    * 用于黑标、标签的定位功能
+	* 支持版本:v4.10.0以上
+    */
+    void labelLocate();
+
+    /**
+    * 用于标签打印结束后送出纸舱盖
+	* 支持版本:v4.10.0以上
+    */
+    void labelOutput();
 }
